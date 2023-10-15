@@ -9,6 +9,6 @@ class User < ApplicationRecord
   
     # Associations
     has_many :payments, dependent: :destroy
-    has_many :categories, dependent: :destroy
+    has_many :categories, class_name: 'Category', foreign_key: 'author_id', dependent: :destroy
     has_many :payment_categories, through: :payments
   end
