@@ -1,2 +1,20 @@
-<h1>Categories#new</h1>
-<p>Find me in app/views/categories/new.html.erb</p>
+<h1>New Category</h1>
+
+<div class="category-container-new">
+<%= form_with(model: @category, url: user_categories_path) do |form| %>
+    <div class="form-food">
+   
+  <div class="labelf">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "name-1" %>
+  </div>
+  <div class="labelf">
+    <%= form.label :icon %> 
+    <%= form.text_field :icon %>
+  </div>
+  <div class="category-submit-btn">
+    <p><%= form.submit "Create Category", class: "new-category-btn" %></p>
+  </div>
+  </div>
+<% end %>
+<div>
