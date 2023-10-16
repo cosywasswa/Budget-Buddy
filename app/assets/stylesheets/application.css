@@ -83,10 +83,11 @@ margin-inline: 1rem;
 padding-top: 1.5rem;
 font-size: 20px;
 color: white;
+font-family: 'Raleway', sans-serif;
  }
 
  .category-nav h1 {
-    font-family: 'Proxima Nova', sans-serif;
+   font-family: 'Raleway', sans-serif;
  }
 
  .category-container {
@@ -292,6 +293,240 @@ width: 90%;
     border: 1px solid white;
     padding: 1rem 4rem;
  }
+
+ .login-header {
+   width: 100%;
+   height: 6rem;
+   background-color: #3778c2;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .fa-arrow-left {
+   font-size: 22px;
+ }
+
+ .field-login {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   background-color: white;
+ }
+
+ .field-login input {
+   height: 3rem;
+   outline-style: none;
+   font-size: 20px;
+   margin-left: 10px;
+   border-color: #f1f3f2;
+   border-style: none;
+   border-bottom: 1px solid #808284;
+ }
+
+ .login-header a {
+   text-decoration: none;
+   color: white;
+ }
+
+ .login-link p {
+   font-size: 22px;
+ }
+
+ .shared-links-login {
+   display: none;
+ }
+
+ .passw-login {
+   position: relative;
+   left: 7rem;
+ }
+
+ .passw-login a {
+   font-size: 22px;
+   color: #434b54;
+   text-decoration: none; 
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .email-login {
+   border-bottom: 1px solid #808284;
+ }
+
+ .field-remember-me {
+   display: none;
+ }
+
+ .p-hide {
+color: #3778c2;
+ }
+
+ .actions-login {
+   position: relative;
+   top: -11rem;
+   left: 19rem;
+   background-color: #3778c2;
+ }
+
+ .login-submit {
+   background-color: #3778c2;
+   border-style: none;
+   color: white;
+   font-size: 17px;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .field-signup {
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+ }
+
+ .field-signup input {
+   width: 100%;
+   height: 3rem;
+   outline-style: none;
+   font-size: 20px;
+   border-color: #f1f3f2;
+   border-style: none;
+   border-bottom: 1px solid #808284;
+   background-color: white;
+ }
+
+ .input-cont {
+   margin-left: 10px;
+ }
+
+ .actions-signup {
+   position: relative;
+   bottom: 22rem;
+   left: 19.5rem;
+ }
+
+ .signup-form-btn {
+background-color: #3778c2;
+border-style: none;
+color: white;
+font-size: 17px;
+font-family: 'Raleway', sans-serif;
+ }
+
+ .signup-top {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 5rem;
+   margin-left: 10px;
+   background-color: white;
+   font-size: 22px;
+   gap: 20px;
+   color: #434b54;
+   font-family: 'Raleway', sans-serif;
+   border-bottom: 1px solid #808284;
+   margin-top: 20px;
+ }
+
+ .fa-user {
+   font-size: 28px;
+   border: 1px solid #434b54; 
+  border-radius: 50%;
+  padding: 5px;
+  color: white; 
+  background-color: #434b54;
+ }
+
+ .cont-top {
+   background-color: white;
+ }
+
+ .label-category {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: white;
+ }
+
+ .label-category input {
+   height: 3rem;
+   outline-style: none;
+   margin-left: 10px;
+   border-style: none;
+   border-bottom: 1px solid #808284;
+   font-size: 18px;
+ }
+
+ .category-submit-btn {
+   width: 100%;
+   margin-top: 10px;
+   background-color: #5fb523;
+   height: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .new-category-btn {
+   width: 300px;
+   font-size: 22px;
+   height: 4rem;
+   background-color: #5fb523;
+   border: 1px solid white;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .label-payment {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: white;
+
+ }
+
+ .label-payment input {
+   height: 3rem;
+   outline-style: none;
+   margin-left: 10px;
+   border-style: none;
+   border-bottom: 1px solid #808284;
+   font-size: 18px; 
+ }
+
+ .payment-submit-btn {
+   width: 100%;
+   margin-top: 10px;
+   background-color: #5fb523;
+   height: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .new-payment-btn {
+   width: 80%;
+   font-size: 22px;
+   height: 4rem;
+   background-color: #5fb523;
+   border: 1px solid white;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .categories-form-cont {
+   padding: 10px;
+   background-color: #3778c2;
+   color: #222325;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ .cat-label {
+   font-size: 22px;
+ }
+
+
 
 
 
