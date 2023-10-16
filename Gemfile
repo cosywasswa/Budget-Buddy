@@ -11,6 +11,8 @@ gem "sprockets-rails"
 
 gem 'rubocop'
 
+gem 'capybara'
+
 gem 'devise'
 
 gem 'cancancan'
