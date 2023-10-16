@@ -21,7 +21,7 @@ class PaymentsController < ApplicationController
 
   def create
     @payment = Payment.new(author_id: current_user.id, **payment_params)
-    category_ids = params[:payment][:category_ids].reject(&:empty?) # Get the selected category IDs
+    category_ids = params[:payment][:category_ids].reject(&:empty?)
   
     if @payment.save
       category_ids.each do |category_id|
