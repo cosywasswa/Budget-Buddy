@@ -66,7 +66,7 @@ BudgeBuddy is a fully functioning website that allows a user to fully manage his
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- This is 'Budget-Buddy'<a href="">Live Demo Link</a>
+- This is 'Budget-Buddy'<a href="https://budgetbuddy-ys90.onrender.com/">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
