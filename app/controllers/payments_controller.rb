@@ -12,7 +12,6 @@ class PaymentsController < ApplicationController
     payment_categories = PaymentCategory.where(category_id: @category_id)
     @payments = Payment.where(id: payment_categories.pluck(:payment_id)).order(created_at: :desc)
     @sum = @payments.sum(:amount)
-
   end
 
   def new
@@ -23,12 +22,12 @@ class PaymentsController < ApplicationController
   def create
     @payment = Payment.new(author_id: current_user.id, **payment_params)
     category_ids = params[:payment][:category_ids].reject(&:empty?)
-  
+
     if @payment.save
       category_ids.each do |category_id|
-        PaymentCategory.create(payment: @payment, category_id: category_id)
+        PaymentCategory.create(payment: @payment, category_id:)
       end
-  my_category = category_ids.first
+      my_category = category_ids.first
       flash[:success] = 'Payment successfully added.'
       redirect_to user_payment_url(author_id: current_user.id, id: my_category)
     else
@@ -38,13 +37,14 @@ class PaymentsController < ApplicationController
   end
 
   def destroy
-    if @payment.destroy
-      redirect_to user_payments_url
-      end
+    return unless @payment.destroy
+
+    redirect_to user_payments_url
   end
 
-private
+  private
+
   def payment_params
-    params.require(:payment).permit(:name, :amount, :category_ids => [])
+    params.require(:payment).permit(:name, :amount, category_ids: [])
   end
 end

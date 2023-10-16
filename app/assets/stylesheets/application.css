@@ -9,6 +9,7 @@
 
  body {
     background-color: #f1f3f2;
+    overflow-x: hidden;
  }
  .landing-page {
     width: 100%;

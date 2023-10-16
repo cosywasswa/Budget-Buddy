@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-    # Set up user authentication
-    before_action :authenticate_user!, unless: :welcome_index_url
+  # Set up user authentication
+  before_action :authenticate_user!, unless: :welcome_index_url
   # Add addtional parameters
   before_action :configure_permitted_parameters, if: :devise_controller?
   # Customize redirect hooks

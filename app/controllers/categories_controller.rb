@@ -9,8 +9,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @category = Category.new
@@ -28,10 +27,10 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def destroy
-  end
+  def destroy; end
 
   private
+
   def category_params
     params.require(:category).permit(:name, :icon)
   end
