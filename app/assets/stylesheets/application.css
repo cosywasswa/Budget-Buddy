@@ -1,5 +1,4 @@
-@media screen and (max-width: 375px) {
-  @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 
   *,
   html {
@@ -527,4 +526,3 @@
   .cat-label {
     font-size: 22px;
   }
-}
