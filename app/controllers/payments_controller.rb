@@ -1,5 +1,4 @@
 class PaymentsController < ApplicationController
-  load_and_authorize_resource
   def index
     @payments = Payment.all
     @categories = Category.all
